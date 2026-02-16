@@ -6,7 +6,7 @@ const leitor = readline.createInterface({
     output: process.stdout
 });
 
-//function fazerPergunta(pergunta, respotaCorreta)
+//function fazerPergunta(pergunta, respotaCorreta){}
 let total= 0;
 leitor.question('Digite um numero para ser somado ', (num1) => {
     
