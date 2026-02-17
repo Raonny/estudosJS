@@ -6,18 +6,18 @@ const leitor = readline.createInterface({
     output: process.stdout
 });
 
-//function fazerPergunta(pergunta, respotaCorreta){}
-let total= 0;
-leitor.question('Digite um numero para ser somado ', (num1) => {
-    
-    leitor.question('Digite outro numero? ', (num2) => {
-       console.log(typeof(num1), typeof(num2))
-        soma(num1, num2);
-        leitor.close();
-    });
-});
+const pergunta = 'Quem é o super heroi mais forte? \n(a) Super Man\n(b) Capitão Incrivel\n(c) Tanos\n Resposta: ';
+const respostaCorreta = 'b';
 
-const soma =  (num1, num2) =>{
-    return console.log(`A soma dos dois numeros é: ${Number(num1) + Number(num2)}`);
+
+
+function fazerPergunta(pergunta, respostaCorreta) {
+
+    leitor.question(pergunta, (resposta) => {
+        resposta == respostaCorreta ? console.log('Resposta correta! ') : console.log('Você errou');
+       leitor.close();
+    });
+
 }
 
+fazerPergunta(pergunta, respostaCorreta)
