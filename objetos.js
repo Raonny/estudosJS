@@ -23,5 +23,5 @@ livro.idiomas = 'Inglês, Português';
 
 delete livro.paginas;
 
-
-console.log(livro);
+const sobreno = 'sobrenome';
+console.log(pessoa[sobreno]);
