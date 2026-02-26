@@ -6,4 +6,6 @@ switch(option){
     case 2:
             console.log('Opção 2')    
         break
+    default:
+        throw new Error('Operação Inválida');    
 }
