@@ -22,7 +22,7 @@ nomes.forEach((valor, indice) => {
     console.log('indice: ', indice, valor)
 });
 
-//FOR OF
+//FOR OF --> melhor e mais moderno
 
 for(const nome of nomes){
     console.log(nome);
